@@ -9,3 +9,4 @@ function Button() {
     </div>
   );
 }
+export function Button; 

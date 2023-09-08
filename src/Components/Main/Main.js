@@ -5,7 +5,6 @@ import CommunityBlog from "/Communityblog";
 import Blog from "./Blog";
 import ContactUs from "./ContactUs";
 
-
 const Main = () => {
   const blogText = `Sunshine Jets Official Website`;
 

@@ -4,7 +4,7 @@ import PhotoGallery from "./PhotoGallery";
 const Aside = () => {
   return (
     <div className="Aside">
-        <h2>Aside</h2>
+       
         
     </div>
   );

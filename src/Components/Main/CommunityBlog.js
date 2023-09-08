@@ -1,4 +1,5 @@
 import React from 'react';
+
 const CommunityBlog = () => {
     return (
         <div className="CommunityBlog">

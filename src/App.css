@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+.Main {
+  display: flex;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #00FFFF;
+}
+a:visited {
+  color: #FF00FF;
+}
+a:hover {
+  color: #AAFFFF;
+}
+a:focus {
+  color: #AAFFFF;
+}
+a:active {
+  color: #00FFFF;
+}
+.Navigation {
+  color: #d3d3d3;
+  background-color: #000000;
+  width: 100%;
+  padding: 5px;
+  box-align: middle;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+ul.NavigationMenus {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+ul.NavigationMenus li {
+  list-style: none;
+  margin-right: 30px;
+  
+}
+ul.NavigationMenus li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 5px;
+}
+ul.NavigationMenus li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  transition: 0.3s;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul.NavigationMenus li a:hover:after{
+  width: 100%;
+  transition: 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  width: 100%;
+  background-image: url("./images/header_background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  margin-top: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header h1 {
+  font-variant: small-caps;
+}
+.Main {
+  display: flex;
+}
+.Heading {
+  flex: 0 0 100%;
+}
+.MainSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.MainSection h2 {
+  font-variant: small-caps;
+}
+.activeNavItem a:after{
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100% !important;
+  bottom: 0;
+  transition: 0.3s;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+  color:hotpink !important;
 }
 
-.App-link {
-  color: #61dafb;
+
+li.activeNavItem a:after{
+  background: #f2f2f270!important;
+} 
+
+.WeatherInformation {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.CommunityBlog {
+  color: #000000;
+  background-color: #d3d3d3;  
+}
+table {
+  border: 1px solid #000000;
+  width: 100%;
+}
+.AsideSection {
+  color: #d3d3d3;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.Footer {
+  clear: both;
+  color: #d3d3d3;
+  background-color: #000000;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (max-width: 768px) {
+
+  .Main {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .Header {
+    margin-top: 20px;
   }
+
 }
