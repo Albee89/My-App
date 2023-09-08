@@ -1,7 +1,7 @@
 import React from "react";
 import Welcome from "./Welcome";
 import Weather from "./WeatherInformation";
-import CommunityBlog from "/Communityblog";
+import CommunityBlog from "./CommunityBlog";
 import Blog from "./Blog";
 import ContactUs from "./ContactUs";
 

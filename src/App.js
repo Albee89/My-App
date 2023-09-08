@@ -1,26 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
-import Navigation from "./Components/Navigation/Navigation";
-import Header from "./Components/jeader/Header";
-import Main from "./Components/Main/Main";
-import Aside from "./Components/Main/Main";
-import Footer from "./Components/Footer/Footer";
+import './index.css';
+import './index.js';
+import Navigation from "./Components/Navigation/Navigation.js";
+import "./images/header_background.png";
+import "./images/dummy.png";
+
+    
+
+        <>
+    <div className="Navigation" >
+    
+</div>
+</>
+ 
 
 
-function App() {
-  return (
-  <div className="App">
-   <Navigation />
-   <Header />
-   <Main />
-   <Aside />
-   <Footer />
+export default Navigation;
 
-        </div>
-);
-}
-ReactDOM.render(
-    <App />,
-    document.getElementById("root")
-);

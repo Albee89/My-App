@@ -3,6 +3,7 @@ function Blog (props) {
 
     const maxChars = 35;
 
+    // eslint-disable-next-line no-undef
     const[hidden, setHidden] = useState(true);
 
 
@@ -16,9 +17,9 @@ return (
             <span>
             {hidden ? `${props.text.substr(0, maxChars).trim()}...` : props.text}
             {hidden ? (
-                <a onClick={() => setHidden(false)}> show more</a>
+                <button onClick={() => setHidden(false)}> show more</button>
             ) : (
-                <a onClick={() => setHidden(true)}> show less</a>
+                <button onClick={() => setHidden(true)}> show less</button>
             )}
             </span>        
         );
