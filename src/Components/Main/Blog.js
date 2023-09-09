@@ -1,10 +1,11 @@
 import React from "react";
-function Blog (props) {
+import { useState } from "react";
+
+function Blog(props) {
 
     const maxChars = 35;
 
-    // eslint-disable-next-line no-undef
-    const[hidden, setHidden] = useState(true);
+    const [hidden, setHidden] = useState(true);
 
 
     if (props.text.length <= maxChars) {
@@ -12,19 +13,19 @@ function Blog (props) {
             <span>{props.text}</span>
         );
     }
-    
-return (
-            <span>
+
+    return (
+        <span>
             {hidden ? `${props.text.substr(0, maxChars).trim()}...` : props.text}
             {hidden ? (
-                <button onClick={() => setHidden(false)}> show more</button>
+                <div onClick={() => setHidden(false)}> show more</div>
             ) : (
-                <button onClick={() => setHidden(true)}> show less</button>
+                <div onClick={() => setHidden(true)}> show less</div>
             )}
-            </span>        
-        );
+        </span>
+    );
 
 }
-    
+
 
 export default Blog;

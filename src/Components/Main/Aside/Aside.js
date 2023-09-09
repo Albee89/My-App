@@ -4,6 +4,7 @@ import PhotoGallery from "./PhotoGallery.js";
 const Aside = () => {
   return (
     <div className="Aside">
+    <PhotoGallery />
     
      </div>   
      
