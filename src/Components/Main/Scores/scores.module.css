@@ -1,0 +1,35 @@
+.table {
+
+  margin-left: 200px;
+  display: flex;
+  width: 100%;
+  background-color: #81D4FA; 
+  color: black;
+}
+
+.th {
+  padding: 15px;
+}
+
+.td {
+padding: 12px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  color: black;
+  border: 2px;
+  text-transform: uppercase;
+}
+
+.filterlink {
+  color: lightblue;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}

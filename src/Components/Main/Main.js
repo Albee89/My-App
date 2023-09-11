@@ -4,7 +4,9 @@ import Weather from "./WeatherInformation";
 import CommunityBlog from "./CommunityBlog";
 import Blog from "./Blog";
 import ContactUs from "./ContactUs";
-import "./ScoresTable/ScoresTable";
+import Scores from './Scores/Scores';
+import Events from './Events/Events';
+import About from "./About";
 
 
 const Main = () => {
@@ -18,6 +20,9 @@ return (
       <div className="Blog">
           <Blog text={blogText}/>
       </div>
+    <Scores />
+    <Events />
+    <About />
     <ContactUs />
   </div>
 );

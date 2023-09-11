@@ -8,8 +8,8 @@ const Navigation = () => {
     { id: 2, title: "Photo Gallery", name: "#hotoGallery" },
     { id: 3, title: "Community Blog", name: "CommunityBlog" },
     { id: 4, title: "Contact Us", name: "ContactUs" },
-    { id: 5, title: "Recent Scores", name: "ScoresTable"},
-    { id: 6, title: "About Us", name:"About-Us"},
+    { id: 5, title: "Recent Scores", name: "Scores"},
+    { id: 6, title: "About", name:"About"},
     { id: 7, title: "Events", name:"Events"},
 
   ];
