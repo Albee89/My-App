@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
   const navItems = [
@@ -23,6 +24,7 @@ const Navigation = () => {
           );
         })}
         </ul>
+    
         </div>
   );
       };

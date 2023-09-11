@@ -1,3 +1,5 @@
+import React from 'react';
+
 const WeatherInformation = () => {
     return (
         <div className="WeatherInformation">
@@ -5,5 +7,6 @@ const WeatherInformation = () => {
         </div>
     );
 };
+
 export default WeatherInformation;
   

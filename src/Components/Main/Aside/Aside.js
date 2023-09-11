@@ -2,16 +2,11 @@ import React from "react";
 import PhotoGallery from "./PhotoGallery.js";
 
 const Aside = () => {
-  return (
-    <div className="Aside">
-    <PhotoGallery />
-    
-     </div>   
-     
-
-)    
+    return (
+        <div className="AsideSection">
+            <PhotoGallery />
+        </div>
+    );
 };
 
-
-
-export default Aside(PhotoGallery);
+export default Aside;
