@@ -4,11 +4,16 @@ import React, { useState } from "react";
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
   const navItems = [
-    { id: 1, title: "Welcome", name: "Welcome" },
-    { id: 2, title: "Photo Gallery", name: "PhotoGallery" },
+    { id: 1, title: "Welcome", name: "WelcomeHeading"},
+    { id: 2, title: "Photo Gallery", name: "#hotoGallery" },
     { id: 3, title: "Community Blog", name: "CommunityBlog" },
-    { id: 4, title: "Contact Us", name: "ContactUs" }
+    { id: 4, title: "Contact Us", name: "ContactUs" },
+    { id: 5, title: "Recent Scores", name: "ScoresTable"},
+    { id: 6, title: "About Us", name:"About-Us"},
+    { id: 7, title: "Events", name:"Events"},
+
   ];
+
   return (
     <div className="Navigation">
       <ul className="NavigationMenus">

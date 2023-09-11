@@ -64,17 +64,6 @@ ul.NavigationMenus li a:hover:after{
   transition: 0.3s;
 }
 
-.Header {
-  width: 100%;
-  background-image: url("images/header_background.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  margin-top: 60px;
-}
-.Header h1 {
-  font-variant: small-caps;
-}
 .Main {
   display: flex;
 }
