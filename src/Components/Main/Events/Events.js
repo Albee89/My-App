@@ -15,16 +15,20 @@
   function Events() {
     return (
       <div className="EventsTable">
-        <table className={Eventstyles.table}>
-        <h2>Events</h2>
-          <tr>
-          <div className ={Eventstyles.tbody}>
+       <h2>Events Calendar</h2>
+        <table className={Eventstyles.container}>
+       
+
+          <div className ={Eventstyles.etable}>
+         
+        
+          <th>Date</th>
+          </div>
+          <th>Time</th>
+          <th>Game</th>
           
-            <th>Date</th>
-            <th>Time</th>
-            <th>Game</th>
-            </div>
-          </tr>
+      
+       
 
           {games.map((val, key) => {
             return (

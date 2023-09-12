@@ -1,13 +1,12 @@
 import React from 'react';
 import Navigation from "./Components/Navigation/Navigation";
 import Header from "./Components/Header/Header";
+import Welcome from "./Components/Main/Welcome/Welcome";
 import Main from "./Components/Main/Main";
 import Aside from "./Components/Main/Aside/Aside";
 import Footer from "./Components/Footer/Footer";
 import Events from './Components/Main/Events/Events';
-import ScoresTable from "./Components/Main/Scores/Scores.js";
-
-
+import Scores from "./Components/Main/Scores/Scores";
 
 
 function App() {
@@ -15,14 +14,14 @@ function App() {
     <div className="App">
   
 
-      <Navigation />
-    
+    <Navigation />
+    <Welcome />
     <Header />
     <div className="main">
     <Main />
-    <Events />
     <Aside />
-    <ScoresTable />
+    <Events />
+    <Scores />
     </div>
     <Footer />
     </div>

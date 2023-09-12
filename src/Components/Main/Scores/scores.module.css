@@ -4,11 +4,11 @@ table {
   display: flexbox;
   width: 100%;
   background-color: #81D4FA; 
-  color: blue;
+  color: black;
 
-}
 
-th {
+
+.th {
   padding: 5px;
 }
 
@@ -16,21 +16,5 @@ th {
 padding: 12px;
 }
 
-.header {
-  width: 100%;
-  text-align: center;
-  color: black;
-  border: 2px;
-  text-transform: uppercase;
-}
 
-.filterlink {
-  color: lightblue;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  position: absolute;
-  color: white;
-  top: 50%;
-  transform: translateY(-50%);
 }
