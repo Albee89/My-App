@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const CommunityBlog = () => {
     return (
         <div className="CommunityBlog">
-        <h3>Community Blog</h3>
+        <h2>Community Blog</h2>
         </div>
     );
 };
