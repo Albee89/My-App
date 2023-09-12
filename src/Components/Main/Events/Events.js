@@ -1,3 +1,7 @@
+  import React from 'react';
+  import Eventstyles from "./events.module.css";
+  
+  
   let games = [
     { date: "Saturday 1st", time: "7:00pm", game: "ALL-DAY PREMIERE: Sunshine Jets vs Leo Suns" },
     { date: "Friday 6th", time: "5:00pm", game: "Sunshine Jets vs Carseldine Corvettes" },
@@ -17,6 +21,7 @@
             <th>Time</th>
             <th>Game</th>
           </tr>
+
           {games.map((val, key) => {
             return (
               <tr key={key}>

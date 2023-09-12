@@ -4,4 +4,6 @@ body.sticky-header {
     header {
       height: 60px;
       background-color: powderblue;
+      color:black;
+      
     }

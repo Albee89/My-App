@@ -1,17 +1,18 @@
-.table {
+table {
 
-  margin-left: 200px;
-  display: flex;
+  margin-left: 20px;
+  display: flexbox;
   width: 100%;
   background-color: #81D4FA; 
-  color: black;
+  color: blue;
+
 }
 
-.th {
-  padding: 15px;
+th {
+  padding: 5px;
 }
 
-.td {
+.tr {
 padding: 12px;
 }
 
