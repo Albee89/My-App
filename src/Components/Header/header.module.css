@@ -1,9 +1,10 @@
 body.sticky-header {
-    padding-top: 100px;
+    padding-top: 15px;
 }
-    header {
+    .header {
       height: 60px;
       background-color: powderblue;
-      color:black;
-      
+      color:white;
+      font: "Franklin Gothic Medium";
     }
+    

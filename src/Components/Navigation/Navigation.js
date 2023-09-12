@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navstyles from "./nav.module.css";
 
 
 const Navigation = () => {
@@ -16,8 +15,6 @@ const Navigation = () => {
 
   return (
     <div className="Navigation">
-    <div className={Navstyles.header}>
-    </div>
       <ul className="NavigationMenus">
         {navItems.map((item) => {
           return (

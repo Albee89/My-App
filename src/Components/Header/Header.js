@@ -4,9 +4,9 @@ import Headerstyles from "./header.module.css";
 export default function Header() {
   return (
     <>
-    <div class="wrapper">
+    <div class="header">
     <div className={Headerstyles.header}></div>
-      <h1>Sunshine Jets Sports Club</h1>
+      <h2>Sunshine Jets Sports Club</h2>
         </div>
 </>
 

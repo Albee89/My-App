@@ -1,36 +1,16 @@
-table {
+.table {
 
-    margin-left: 20px;
-    display: flexbox;
-    width: 100%;
-    background-color: #81D4FA; 
-    color: black;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   
   }
   
-  th {
-    padding: 5px;
-  }
-  
-  .tr {
-  padding: 12px;
-  }
-  
-  .header {
-    width: 100%;
-    text-align: center;
-    color: black;
-    border: 2px;
-    text-transform: uppercase;
-  }
-  
-  .filterlink {
-    color: lightblue;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    position: absolute;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  .tbody {
+    background-color:aliceblue;
+    color: #ffffff;
+    text-align: left;
+}
+ 
