@@ -1,15 +1,17 @@
 import PhotoAlbum from "react-photo-album";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Picstyle from "./photo.module.css";
 
 
 const PhotoGallery = () => {
 
   return (
+    <div class="PhotoGallery">
+    <div className={Picstyle.grow}>
+    <h2>Photo Gallery</h2>
     <PhotoAlbum>
-  
-    <div className="PhotoGallery" id="PhotoGallery">
-      <h3>PhotoGallery</h3>
+
       <Carousel>
         <div>
         <p img src="src/Components/images/dummy.png"/>
@@ -24,9 +26,12 @@ const PhotoGallery = () => {
           <p className="legend">Photo 3</p>
         </div>
       </Carousel>
-    </div>
-    </PhotoAlbum>
-  );
-}
+      
+  </PhotoAlbum>
+
+</div>
+</div>
+)}
+
  
 export default PhotoGallery;

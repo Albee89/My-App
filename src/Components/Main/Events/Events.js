@@ -1,7 +1,7 @@
   import React from 'react';
   import Eventstyles from "./events.module.css";
   
-  
+
   let games = [
     { date: "Saturday 1st", time: "7:00pm", game: "ALL-DAY PREMIERE: Sunshine Jets vs Leo Suns" },
     { date: "Friday 6th", time: "5:00pm", game: "Sunshine Jets vs Carseldine Corvettes" },
@@ -11,24 +11,19 @@
     { date: "Sunday 16th", time: "4:00pm", game: "Sunshine Jets vs North Gympie" },
 
   ];
-
-  function Events() {
+  
+function Events() {
     return (
       <div className="EventsTable">
        <h2>Events Calendar</h2>
-        <table className={Eventstyles.container}>
-       
-
-          <div className ={Eventstyles.etable}>
-         
-        
+       <table className={Eventstyles.container}>
+  
+       <div className={Eventstyles.grow}>
           <th>Date</th>
-          </div>
           <th>Time</th>
           <th>Game</th>
           
-      
-       
+         
 
           {games.map((val, key) => {
             return (
@@ -39,8 +34,10 @@
               </tr>
             )
           })}
+          </div>
         </table>
-      </div>
+        </div>
+      
     );
   }
 

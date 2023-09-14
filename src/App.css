@@ -9,15 +9,11 @@
   justify-content: center;
   flex-direction: column;
   max-width: 900px;
-
+  display:none;
 
 }
-fragment.blur {
-    filter: blur(5px);
-  }
-  .fragment.blur.visible {
-    filter: none;
-  }
+
+
 
 .main {
  background-color: aliceblue;
@@ -102,7 +98,7 @@ fragment.blur {
   
   
   h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     cursor: pointer;
   }

@@ -3,7 +3,7 @@ import React from 'react';
 const Welcome = () => {
     return (
         <div className="Welcome">
-        <h3>The Sunshine Coast Jets Sporting club is a </h3>
+        <h3><em>For the fans, for the future</em></h3>
         </div>
     );
 }
