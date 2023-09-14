@@ -11,11 +11,11 @@ let scores = [
 
 function Scores() {
 return (
-  <div name={Scorestyles.container}>
+  <div className={Scorestyles.table}>
   <h2>Recent Scores</h2>
-  <table> 
+  <table>
+  <div className={Scorestyles.grow}> 
 <tr>
-
   <th>Date</th>
   <th>Teams</th>
   <th>Score</th>
@@ -30,8 +30,11 @@ return (
               </tr>
             )
           })}
+         </div>
         </table>
       </div>
+     
+
     );
   }
 export default Scores;

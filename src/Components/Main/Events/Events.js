@@ -4,7 +4,7 @@
 
   let games = [
     { date: "Saturday 1st", time: "7:00pm", game:  "Sunshine Jets vs Leo Suns" },
-    { date: "Friday 6th", time: "5:00pm", game:  "Sunshine Jets vs Carseldine Corvettes" },
+    { date: "Friday 6th", time: "5:00pm", game:  "Sunshine Jets vs Cara Corvettes" },
     { date: "Saturday 8th", time: "6:00pm", game:  "Sunshine Jets vs DaVincis" },
     { date: "Friday 14th", time: "5:00pm", game:  "Sunshine Jets vs Ashgrove Turbos" },
     { date: "Saturday 15th", time: "7:00pm", game: "Sunshine Jets vs Leo Suns" },
