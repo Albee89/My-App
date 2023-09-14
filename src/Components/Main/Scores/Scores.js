@@ -11,10 +11,10 @@ let scores = [
 
 function Scores() {
 return (
-  <div name={Scorestyles.table}>
+  <div name={Scorestyles.container}>
   <h2>Recent Scores</h2>
   <table> 
-<tr className={Scorestyles.header}>
+<tr>
 
   <th>Date</th>
   <th>Teams</th>

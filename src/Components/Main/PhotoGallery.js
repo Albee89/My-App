@@ -10,6 +10,7 @@ const PhotoGallery = () => {
     <div class="PhotoGallery">
     <div className={Picstyle.grow}>
     <h2>Photo Gallery</h2>
+    <div>
     <PhotoAlbum>
 
       <Carousel>
@@ -31,7 +32,9 @@ const PhotoGallery = () => {
 
 </div>
 </div>
-)}
+</div>
 
+  )
+};
  
 export default PhotoGallery;
