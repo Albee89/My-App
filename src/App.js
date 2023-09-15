@@ -1,33 +1,30 @@
 import React from 'react';
 import Navigation from "./Components/Navigation/Navigation";
 import Header from "./Components/Header/Header";
-import Welcome from "./Components/Main/Welcome/Welcome";
-import About from "./Components/Main/About";
+import About from "./Components/About/About";
+import Welcome from "./Components/Welcome/Welcome";
+import Main from "./Components/Main/Main";
 import Footer from "./Components/Footer/Footer";
-import Events from './Components/Main/Events/Events';
-import Scores from "./Components/Main/Scores/Scores";
-import PhotoGallery from './Components/Main/PhotoGallery';
-import Main from './Components/Main/Main';
+
 
 
 function App () {
   return (
  <div className="App">
-    <Navigation />
-    <Welcome />
-    <Header />
+  <Navigation />
+  <Header />  
+  <Welcome />
+  <About />
     <div className="main">
-    <Events />
-    <Scores />
     <Main />
-    <PhotoGallery />
-    </div>
-    <About />
+    </div>  
     <Footer />
 
     </div>
+   
   );
     
 };
 
 export default App;
+

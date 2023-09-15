@@ -1,40 +1,36 @@
-import PhotoAlbum from "react-photo-album";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import Picstyle from "./photo.module.css";
+import React, { Component } from "react";
+import EnhancedComponent from "./Search.js";
 
-
-const PhotoGallery = () => {
-
-  return (
-    <div class="PhotoGallery">
-    <div className={Picstyle.grow}>
-    <h2>Photo Gallery</h2>
-    <div>
-    <PhotoAlbum>
-
-      <Carousel>
-        <div>
-        <p img src="src/Components/images/dummy.png"/>
-          <p className="legend">Photo 1</p>
-        </div>
-        <div>
-          <p img src="src/Components/images/dummy.png" />
-          <p className="legend">Photo 2</p>
-        </div>
-        <div>
-          <p img src="src/Components/images/dummy.png" />
-          <p className="legend">Photo 3</p>
-        </div>
-      </Carousel>
-      
-  </PhotoAlbum>
-
-</div>
-</div>
-</div>
-
-  )
-};
+const photogalleryList = [
+    {
+      "title": "Photo 1",
+      "location": "Location 1",
+      "photo": ""
+    },
+    {
+      "title": "Photo 2",
+      "location": "Location 2",
+      "photo": ""
+    }
+  ]
  
-export default PhotoGallery;
+  
+  export class PhotoGallery extends Component {
+    render() {
+      const {searchTerm} = this.props;
+      return (
+        <div>
+          <div>
+            <h3>PhotoGallery</h3>
+          </div>
+          <div>
+          {photogalleryList
+            .filter(photogalleryItem => `${photogalleryItem.title} ${photogalleryItem.location} ${photogalleryItem.photo}`.toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0)
+            .map(photogalleryItem => <photogalleryCard key={photogalleryItem.id} {...photogalleryItem} />)}
+          </div>
+        </div>
+      );
+    }
+  }
+  
+  export default EnhancedComponent(PhotoGallery);

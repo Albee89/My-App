@@ -1,3 +1,5 @@
+
+
 .grow {
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
@@ -14,3 +16,9 @@
   .grow:hover {
     height: 145px;
   }
+  .body {
+    color: #000000;
+    background-color: #d3d3d3; 
+  }
+
+  

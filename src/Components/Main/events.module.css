@@ -1,28 +1,27 @@
-table {
-  display: container;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 15px;
-  height: 49px;
+
+.container {
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  float:left;
   border-collapse: separate;
   border-spacing: 0 15px
 
 }
 
-
-
-
-fragment.blur {
-  filter: blur(5px);
-}
-.fragment.blur.visible {
-  filter: none;
-  
-}
-
-
+    
+    fragment.blur {
+      filter: blur(5px);
+    }
+    .fragment.blur.visible {
+      filter: none;
+      
+    }
+    
+   
 .grow {
   border-radius: 15px;
   height: 49px;

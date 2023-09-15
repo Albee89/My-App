@@ -3,10 +3,14 @@ import Headerstyles from "./header.module.css";
 
 export default function Header() {
   return (
-
+    <div className={Headerstyles.header}>
     <div class="header">
-    <div className={Headerstyles.header}></div>
-      <h2>Sunshine Jets Sports Club</h2>
+
+   <div className={Headerstyles.h1}>
+      <h1>Sunshine Jets Sports Club</h1>
+      
+        </div>
+        </div>
         </div>
 
 
