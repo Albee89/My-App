@@ -13,20 +13,26 @@ import News from './News';
 const Main = () => {
   const blogText = ``
   return (
-  <div className="MainSection">
+  <div className="MainSection">         
+    
+    <News />
+    
+    <WeatherInformation />
+
     <CommunityBlog />
     <div className="Blog">
           <Blog text={blogText}/>
-          <News />
+          </div>
+
     <Events />
-    <WeatherInformation />
+    
     <PhotoGallery />
 
     <Scores />
 
     <Search />
     
-   
+    <div>
     </div>
   
 

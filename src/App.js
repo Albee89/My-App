@@ -7,13 +7,17 @@ import Main from "./Components/Main/Main";
 import Footer from "./Components/Footer/Footer";
 
 
+
 function App () {
   return (
  <div className="App">
+ <styles />
   <Navigation />
   <Header />  
   <Welcome />
+  <div>
   <About />
+  </div>
     <div className="main">
     <Main />
     </div>  

@@ -1,5 +1,15 @@
+
+.About {
+color:white;
+margin-top: -11px;
+padding: 5px 5px 5px 5px;
+background-color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 13px;
+}
+
 .grow {
-    padding: 5px 5px 5px 5px;
+   
     border-radius: 10px;
     height: 49px;
     width: 22%;
@@ -15,8 +25,4 @@
     height: 145px;
   }
 
-.About {
-  margin-top:20px;
-  margin-bottom: 15px;
-}
   

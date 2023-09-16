@@ -1,6 +1,6 @@
 .Main {
-  display: flex;
-  overflow: hidden;
+  display:flexbox;
+  justify-content:space-around;
 }
 a {
   text-decoration: none;
@@ -92,48 +92,29 @@ background: #f2f2f270!important;
 
 .main {
  background-color: black;
+ display:flexbox;
+ justify-content:"space-evenly";
 
 }
 .body {
-  margin: 0 auto;
-  padding: 0;
-  overflow-x: hidden;
-  padding: $base-spacing-unit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 900px;
+  display:flexbox;
+  justify-content:"space-evenly";
 }
 
 
   .Welcome {
    
     font-size:smaller;
+    margin-right: 10px;
+    margin-left:20px;
 
   }
-  h2 {
-    margin-top:25px;
-    margin-bottom: 25px;
+  .h2 {
+   margin-bottom:10px;
   
   }
   
-  
-  h2 {
-    --s: 0.1em;
-    --c: whitesmoke;
-  
-    color: #0000;
 
-    font-size: medium;
-    padding-bottom: var(--s);
-    background:
-      linear-gradient(90deg, var(--c) 50%, powderblue 0) calc(100% - var(--_p, 0%))/200% 100%,
-      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: 0.5s;
-  }
   
  
      
@@ -141,6 +122,8 @@ background: #f2f2f270!important;
     height: 40px;
     background-color: black;
     color: white;
+    padding-left: 10px;
+    padding-right:10px;
   }
     
   h1 {
@@ -166,6 +149,7 @@ background: #f2f2f270!important;
 
   width: 400px;
   height: 400px;
+  float: right;
 
 
   .slide_direction {
@@ -208,13 +192,44 @@ background: #f2f2f270!important;
   }
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:600px;
+  height:400px;
+
+  .carousel-root carousel-container{
+    container-type:normal;
+    position:absolute;
+    background-color: azure; 
+    margin-top:20px;
+    margin-bottom:15px;
+   
+  .image {
+width:fit-content;
+height:fit-content;
+    }
+
+
+
+.carousel-container {
+  max-width: 750px;
+}
+
 @media screen and (max-width: 768px) {
 
   .Main {
     display: block;
+    padding-left:10px;
+    margin-right:10px;
+  
   }
   .Header {
     margin-top: 20px;
   }
 
+}
+}
 }

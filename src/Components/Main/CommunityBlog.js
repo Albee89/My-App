@@ -5,8 +5,10 @@ import Comstyle from "./community.module.css";
 const CommunityBlog = () => {
     return (
         <div className="CommunityBlog">
+        <h2>Community Blog</h2>
+        
         <div className={Comstyle.grow}>
-          <h2>Community Blog</h2>
+         
           <div className={Comstyle.body}>
 <p>As recently as Monday of last week, Sunshhine jets was pleased to 
 annouce the t vero eos et accusamus et iusto odio dignissimos ducimus 
