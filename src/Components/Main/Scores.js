@@ -11,7 +11,7 @@ let scores = [
 
 function Scores() {
 return (
-  <div className={Scorestyles.table}>
+  <div className={Scorestyles.case}>
   <h2>Recent Scores</h2>
   <table>
   <div className={Scorestyles.grow}> 
@@ -38,4 +38,3 @@ return (
     );
   }
 export default Scores;
-

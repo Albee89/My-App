@@ -16,7 +16,7 @@ function Events() {
     return (
       <div className="EventsTable">
        <h2>Events Calendar</h2>
-       <table className={Eventstyles.container}>
+       <table className={Eventstyles.contain}>
   
        <div className={Eventstyles.grow}>
        

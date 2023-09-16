@@ -1,21 +1,17 @@
-import React from 'react';
-import ReactWeather, { useOpenWeather } from "react-open-weather";
+import ReactWeather, { useOpenWeather } from 'react-open-weather';
 import Weatherstyles from "./weather.module.css";
 
-
 const WeatherInformation = () => {
-
   const { data, isLoading, errorMessage } = useOpenWeather({
-    key: 'API key', //Put your API Key between the quotes
+    key: 'ef572e62024121dfaba6b28ca69eae3f',
     lat: '48.137154',
     lon: '11.576124',
     lang: 'en',
     unit: 'metric', // values are (metric, standard, imperial)
   });
-
   return (
-    <div className={Weatherstyles.grow}>
-      <h2>Weather Information</h2>
+    <div className={Weatherstyles.body}>
+    <h2>Local Weather</h2>
     <ReactWeather
       isLoading={isLoading}
       errorMessage={errorMessage}
@@ -23,11 +19,10 @@ const WeatherInformation = () => {
       lang="en"
       locationLabel="Munich"
       unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
+      showForecast
     />
-      </div>
+    </div>
   );
-
-}
+};
 
 export default WeatherInformation;
-  

@@ -9,20 +9,22 @@ const PhotoGallery = () => {
   return (
     <div className = {Photostyles.grow}>
       <h2>Photo Gallery</h2>
+      <div className="Photos">
       <Carousel>
         <div>
-          <img src="src/images/dummy.png" alt="PhotoGallery"/>
-          <p className="legend">Photo 1</p>
+          <img src="src/images.soccer-game" alt="PhotoGallery"/>
+          
         </div>
         <div>
           <img src="src/images/dummy.png" alt="PhotoGallery"/>
-          <p className="legend">Photo 2</p>
+          
         </div>
         <div>
           <img src="src/images/dummy.png" alt="PhotoGallery"/>
-          <p className="legend">Photo 3</p>
+          
         </div>
       </Carousel>
+    </div>
     </div>
  
   );
