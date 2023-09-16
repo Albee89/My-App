@@ -1,7 +1,13 @@
-.Photos {
-  height: 200px;
-  width: 200px;
-  background-color: ;
+.carousel-root carousel-container{
+container-type:normal;
+position:absolute;
+background-color: azure; 
+margin-top:20px;
+margin-bottom:15px;
+width:150px;
+height:150px;
+ 
+
 }
 
 .grow {
@@ -23,4 +29,3 @@
   @import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
 
  
-  

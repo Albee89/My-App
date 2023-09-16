@@ -1,9 +1,10 @@
 
-.body {
-  display: container;
-  background-color: white;
-  color: black;
+
+  .WeatherInformation {
+    display: flex;
+    flex-wrap: wrap; 
   }
+  
   
 
 .grow {

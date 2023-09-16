@@ -10,7 +10,7 @@ const WeatherInformation = () => {
     unit: 'metric', // values are (metric, standard, imperial)
   });
   return (
-    <div className={Weatherstyles.body}>
+    <div className={Weatherstyles.WeatherInformation}>
     <h2>Local Weather</h2>
     <ReactWeather
       isLoading={isLoading}

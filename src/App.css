@@ -94,7 +94,17 @@ background: #f2f2f270!important;
  background-color: black;
 
 }
-
+.body {
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  padding: $base-spacing-unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 900px;
+}
 
 
   .Welcome {
@@ -103,8 +113,8 @@ background: #f2f2f270!important;
 
   }
   h2 {
-    margin: 0;
-    
+    margin-top:25px;
+    margin-bottom: 25px;
   
   }
   
@@ -168,7 +178,7 @@ background: #f2f2f270!important;
     color: #fff;
     margin: 0 20px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 10px;
@@ -188,9 +198,10 @@ background: #f2f2f270!important;
   }
   .dot {
     background-color: #333;
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
+    display:block;
   }
   .active {
     background-color: #fa2020;
