@@ -1,34 +1,25 @@
 import React from 'react';
 import "./App.css";
-import PhotoGallery from './Components/PhotoGallery';
-import Feed from './Components/Instagram/Feed';
 import Navigation from './Components/Navigation/Navigation';
 import Main from './Components/Main/Main';
-import Scores from './Components/Scores/Scores';
-import News from './Components/News/News';
-import Events from './Components/Events/Events';
+import PhotoGallery from './Components/PhotoGallery';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 function App () {
   return (
-
- <div className="App">
-  <Navigation /> 
-    <PhotoGallery />
-    <Feed 
-      userName="bainsworld"
-      className="Feed"
-      classNameLoading="Loading"
-      limit="8"
-      />
-      <News/>
-    <Scores />
-    <Events />
+    <div className="App">
+ <Navigation />
+    <Header />
 
     <div className="main">
     <Main />
     </div>  
+  <PhotoGallery />
+  <div>
+  <Footer />
     </div>
-
+    </div>
   )
 };
 
