@@ -7,25 +7,31 @@ import Welcome from './Welcome/Welcome';
 import News from './News/News';
 import Scores from './Scores/Scores';
 import Events from './Events/Events';
+import PhotoGallery from './PhotoGallery';
+import Search from './Search';
+import Videos from './Videos';
 
+const blogText = ``
 
 const Main = () => {
-  const blogText = `hello world here's a song that we're singing`
-  return (
+   return (
   <div className="MainSection">         
     <Welcome />
     <News/>
-    <CommunityBlog />
     <Scores />
     <Events />
+ 
     <div className="Blog">
-          <Blog text={blogText}/>
+    <CommunityBlog />
+      <Blog text={blogText}/>
           </div>
-          
-  <WeatherInformation />
+          <Videos />
+          <PhotoGallery />
+      
+ 
   <ContactUs />
-    
-
+    <Search />
+<WeatherInformation />
     
     <div>
     </div>
