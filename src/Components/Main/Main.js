@@ -9,6 +9,7 @@ import Search from './Search';
 import News from './News';
 
 
+
 const Main = () => {
   const blogText = `hello world here's a song that we're singing`
   return (

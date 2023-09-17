@@ -12,6 +12,7 @@ let scores = [
 function Scores() {
 return (
   <div className={Scorestyles.case}>
+  <div id="#Scores"></div>
   <h2>Recent Scores</h2>
   <table>
   <div className={Scorestyles.grow}> 

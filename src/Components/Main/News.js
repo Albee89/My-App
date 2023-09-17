@@ -14,6 +14,7 @@ const images = [
         return (
           <div className="News">
             <h2>Latest News</h2>
+            <div id="News"></div>
             <main>
               <Carousel images={images} />
             </main>

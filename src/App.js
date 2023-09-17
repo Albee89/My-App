@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 import { Route,Routes } from 'react-router-dom';
 import Navigation from "./Components/Navigation/Navigation";
 import Header from "./Components/Header/Header";
@@ -16,22 +17,25 @@ function App () {
   return (
 
  <div className="App">
-  <Navigation />
+  <Navigation>
   <Routes>
-      <Route path="/Main/PhotoGallery" element={<PhotoGallery />}/>
-      <Route path="/Main/CommunityBlog" element={<CommunityBlog/>}/>
-      <Route path="/ContactUs" element={<ContactUs/>}/>
-      <Route path="/Main/Scores" element={<Scores />}/>
-      <Route path="/Main/Events" element={<Events />} />
-      <Route path="/About" element={<About/>} />
-  </Routes>
+      <Route path="#PhotoGallery" element={<PhotoGallery />}/>
+      <Route path="#CommunityBlog" element={<CommunityBlog/>}/>
+      <Route path="#ContactUs" element={<ContactUs/>}/>
+      <Route path="#Scores" element={<Scores />}/>
+      <Route path="#Events" element={<Events />} />
+      <Route path="#About" element={<About/>} />
+  </Routes> 
+  </Navigation>
+
   <Header />  
   <Welcome />
-  <About />
+ 
     <div className="main">
     <Main />
     </div>  
     <ContactUs />
+    <About />
     <Footer />
     </div>
 

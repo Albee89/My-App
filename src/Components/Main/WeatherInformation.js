@@ -11,6 +11,7 @@ const WeatherInformation = () => {
   });
   return (
     <div className="WeatherInformation">
+     <div id="WeatherInformation"></div>
     <div className={Weatherstyles.WeatherInformation}>
     <h2>Local Weather</h2>
     <ReactWeather

@@ -39,6 +39,7 @@ export default function PhotoGallery() {
   }
   return (
     <div className="Carousel">
+    <div id="PhotoGallery"></div>
     <h2>Image Gallery</h2>
       <Carousel
         showArrows={true}
