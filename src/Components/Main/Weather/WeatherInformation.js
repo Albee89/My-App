@@ -1,5 +1,6 @@
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
 import Weatherstyles from "./weather.module.css";
+import customStyles from 'styled-components';
 
 const WeatherInformation = () => {
   const { data, isLoading, errorMessage } = useOpenWeather({
