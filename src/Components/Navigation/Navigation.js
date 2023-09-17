@@ -12,6 +12,7 @@ const Navigation = () => {
     { id: 6, title: "Events", name:"#Events" },
 
   ];
+  
 
   return (
     <div className="Navigation">

@@ -1,42 +1,32 @@
 import React from 'react';
 import "./App.css";
-import { Route,Routes } from 'react-router-dom';
-import Navigation from "./Components/Navigation/Navigation";
-import Header from "./Components/Header/Header";
-import About from "./Components/About/About";
-import Welcome from "./Components/Welcome/Welcome";
-import Main from "./Components/Main/Main";
-import Footer from "./Components/Footer/Footer";
-import ContactUs from './Components/ContactUs/ContactUs';
-import PhotoGallery from './Components/Main/PhotoGallery';
-import CommunityBlog from './Components/Main/CommunityBlog';
-import Scores from './Components/Main/Scores';
-import Events from './Components/Main/Events';
+import PhotoGallery from './Components/PhotoGallery';
+import Feed from './Components/Instagram/Feed';
+import Navigation from './Components/Navigation/Navigation';
+import Main from './Components/Main/Main';
+import Scores from './Components/Scores/Scores';
+import News from './Components/News/News';
+import Events from './Components/Events/Events';
 
 function App () {
   return (
 
  <div className="App">
-  <Navigation>
-  <Routes>
-      <Route path="#PhotoGallery" element={<PhotoGallery />}/>
-      <Route path="#CommunityBlog" element={<CommunityBlog/>}/>
-      <Route path="#ContactUs" element={<ContactUs/>}/>
-      <Route path="#Scores" element={<Scores />}/>
-      <Route path="#Events" element={<Events />} />
-      <Route path="#About" element={<About/>} />
-  </Routes> 
-  </Navigation>
+  <Navigation /> 
+    <PhotoGallery />
+    <Feed 
+      userName="bainsworld"
+      className="Feed"
+      classNameLoading="Loading"
+      limit="8"
+      />
+      <News/>
+    <Scores />
+    <Events />
 
-  <Header />  
-  <Welcome />
- 
     <div className="main">
     <Main />
     </div>  
-    <ContactUs />
-    <About />
-    <Footer />
     </div>
 
   )

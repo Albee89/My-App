@@ -1,12 +1,5 @@
 
 
-  .WeatherInformation {
-    display: flex;
-    flex-wrap: wrap; 
-  }
-  
-  
-
 .grow {
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
@@ -22,6 +15,11 @@
   }
   .grow:hover {
     height: 145px;
+  }
+  .body {
+    color: white;
+    background-color: black;
+    align-items:left
   }
 
   
