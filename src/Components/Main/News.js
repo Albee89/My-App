@@ -10,14 +10,31 @@ const images = [
   "https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   "https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 ];
+
+const index = [ "Historical 25th Anniverary game- tickets on sale now!",
+
+
+];
     function News() {
         return (
           <div className="News">
+          <div id="News"></div>
             <h2>Latest News</h2>
-            <div id="News"></div>
-            <main>
+            <p
+              style={{
+                position: "relative",
+                margin: "3.5%",
+                bottom: 0,
+                color: "white",
+             
+
+              }}
+            >
+              {index} 
+            </p>
+         
               <Carousel images={images} />
-            </main>
+            
           </div>
         );
     }

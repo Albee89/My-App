@@ -19,6 +19,7 @@ const ContactUs = () => {
 
   return (
     <div className='ContactUs'>
+    <div id="#ContactUs"></div>
     <h2>Contact Us</h2>
       <div className={CUstyles.contactForm}>
         <div className='row'>

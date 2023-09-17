@@ -6,11 +6,12 @@ const CommunityBlog = () => {
     return (
         <div className="CommunityBlog">
         <h2>Community Blog</h2>
+        <div id="#CommunityBlog"></div>
         
         <div className={Comstyle.grow}>
          
           <div className={Comstyle.body}>
-          <div id="CommunityBlog"></div>
+        
 <p>As recently as Monday of last week, Sunshhine jets was pleased to 
 annouce the t vero eos et accusamus et iusto odio dignissimos ducimus 
 qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 

@@ -7,9 +7,9 @@ const Navigation = () => {
     { id: 1, title: "Photo Gallery", name: "#PhotoGallery" },
     { id: 2, title: "Community Blog", name: "#CommunityBlog" },
     { id: 3, title: "Contact Us", name: "#ContactUs" },
-    { id: 4, title: "Recent Scores", name: "#Scores"},
-    { id: 5, title: "About", name:"#About"},
-    { id: 6, title: "Events", name:"#Events"},
+    { id: 4, title: "Recent Scores", name: "#Scores" },
+    { id: 5, title: "About", name:"#About" },
+    { id: 6, title: "Events", name:"#Events" },
 
   ];
 

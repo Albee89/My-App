@@ -38,8 +38,8 @@ export default function PhotoGallery() {
     setCurrentIndex(index);
   }
   return (
-    <div className="Carousel">
-    <div id="PhotoGallery"></div>
+    <div className="PhotoGallery">
+    <div id="#PhotoGallery"></div>
     <h2>Image Gallery</h2>
       <Carousel
         showArrows={true}

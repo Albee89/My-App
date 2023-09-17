@@ -7,6 +7,7 @@ export default function About() {
     
     return (
         <div className="About">
+        <div id="#About"></div>
         
         <div className={Aboutstyle.About}>
         <h3>About Us</h3>
