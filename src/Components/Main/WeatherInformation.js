@@ -10,6 +10,7 @@ const WeatherInformation = () => {
     unit: 'metric', // values are (metric, standard, imperial)
   });
   return (
+    <div className="WeatherInformation">
     <div className={Weatherstyles.WeatherInformation}>
     <h2>Local Weather</h2>
     <ReactWeather
@@ -21,6 +22,7 @@ const WeatherInformation = () => {
       unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
       showForecast
     />
+    </div>
     </div>
   );
 };

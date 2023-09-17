@@ -9,26 +9,32 @@ import Search from './Search';
 import News from './News';
 
 
-
 const Main = () => {
-  const blogText = ``
+  const blogText = `hello world here's a song that we're singing`
   return (
   <div className="MainSection">         
     
+    
     <News />
+   
     
     <WeatherInformation />
-
+  
     <CommunityBlog />
     <div className="Blog">
           <Blog text={blogText}/>
           </div>
-
+        
+  
     <Events />
+
     
     <PhotoGallery />
 
+
+
     <Scores />
+
 
     <Search />
     

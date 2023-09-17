@@ -9,12 +9,12 @@ export default function About() {
         <div className="About">
         
         <div className={Aboutstyle.About}>
-        <h2>About Us</h2>
+        <h3>About Us</h3>
         <div className={Aboutstyle.grow}>
         <Box sx={{ 
         FontWeight: 'fontWeightLight',
         width: 300,
-        height: 300,
+        height: 200,
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',
