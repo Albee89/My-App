@@ -14,16 +14,22 @@ export default function About() {
         <div className={Aboutstyle.grow}>
         <Box sx={{ 
         FontWeight: 'fontWeightLight',
-        width: 300,
-        height: 200,
-        backgroundColor: 'primary.dark',
+        width: 1000,
+        height: 1000,
+        backgroundColor: 'primary.light',
         '&:hover': {
           backgroundColor: 'primary.main',
           opacity: [0.9, 0.8, 0.7],
         
         },
       }}
-    >
+    ><p>For over 25 years, Sunshine Jets Soccer Club
+        has been home to atheletes and families Sed 
+        piciatis unde omnis iste natus error sit v
+        tem accu santium doloremque laudantium, tot 
+        rem aperiam, eaque ipsash ab illoili inventor
+        ritatis et quasi architecto beatae vitae dicta. 
+        Nemo e nis iste natus error sit voluptatem accu.
         For over 25 years, Sunshine Jets Soccer Club
         has been home to atheletes and families Sed 
         piciatis unde omnis iste natus error sit v
@@ -31,6 +37,13 @@ export default function About() {
         rem aperiam, eaque ipsash ab illoili inventor
         ritatis et quasi architecto beatae vitae dicta. 
         Nemo e nis iste natus error sit voluptatem accu.
+        For over 25 years, Sunshine Jets Soccer Club
+        has been home to atheletes and families Sed 
+        piciatis unde omnis iste natus error sit v
+        tem accu santium doloremque laudantium, tot 
+        rem aperiam, eaque ipsash ab illoili inventor
+        ritatis et quasi architecto beatae vitae dicta. 
+        Nemo e nis iste natus error sit voluptatem accu.</p>
     </Box>
 
         </div>

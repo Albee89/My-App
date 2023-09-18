@@ -1,16 +1,3 @@
-body {
-  color: white;
-  font-size: 15px;
-  background-color: black;
-  border-radius: 15px;
-  height: 49px;
-  max-width: 800px;
-  align-items: left;
-  
-}
-
-
-
 .grow {
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
@@ -24,9 +11,17 @@ body {
     text-align: center;
     overflow: hidden;
   }
-  grow:hover {
+  .grow:hover {
     height: 145px;
   }
- 
+  body {
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 15px;
+    height: 49px;
+    align-items: left;
+    
+  }
 
   

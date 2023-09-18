@@ -1,11 +1,12 @@
 .Main {
- justify-content:space-evenly;
-  display: block;
+  display: flex;
+  overflow: hidden;
   padding-left:10px;
   margin-right:10px;
   background-color: black;
  
 }
+
 
 a {
   text-decoration: none;
@@ -157,7 +158,7 @@ background: #f2f2f270!important;
   h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-    float:right;
+    margin-left:445px;
     color:#81D4FA;
     font-style: oblique;
     
@@ -168,17 +169,19 @@ background: #f2f2f270!important;
     
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
-    margin-left: 22px;
     cursor: pointer;
     color:#81D4FA;
   
 }
 
+
+
 .News {
 
   width: 400px;
   height: 400px;
-  float: right;
+  float:right;
+  
   
 
 
@@ -245,7 +248,13 @@ width:fit-content;
 height:fit-content;
     }
 
+.embed-video-container {
+  float:right;
+  width:300px;
+  height:300px;
+ }
 
+}
 
 .carousel-container {
   max-width: 750px;
@@ -254,14 +263,16 @@ height:fit-content;
 
 
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 900px) {
 
   
-  }
-  .Header {
-    margin-top: 20px;
-  }
+}
+.Header {
+  margin-top: 20px;
+}
 
 }
+
+.Footer {
+  float:right; 
 }
