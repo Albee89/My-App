@@ -1,5 +1,6 @@
 {
-  "name": "AlBee89.github.io",
+  "name": "sj-app",
+  "homepage": "https://<username>.GitHub.io/github-pages-app/",
   "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.11.1",
