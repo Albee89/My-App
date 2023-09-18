@@ -1,5 +1,5 @@
 {
-  "name": "sj-app",
+  "name": AlBee89.github.io,
   "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -63,7 +63,8 @@
     "webpack": "^5.88.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
