@@ -22,6 +22,9 @@ function App () {
   <About />
   </div>
   <div>
+  <div><br>
+    
+  </br></div>
   <Footer />
     </div>
     </div>

@@ -1,1 +1,0 @@
-declare module 'react-open-weather';ts(7016)
