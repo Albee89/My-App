@@ -2,6 +2,8 @@ import React from 'react';
 import Comstyle from "./community.module.css";
 
 
+
+
 const CommunityBlog = () => {
     return (
         <div className="CommunityBlog">

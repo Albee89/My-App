@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 
+
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -52,6 +53,7 @@ const Carousel = ({ images }) => {
             key={index}
             className={`dot ${currentIndex === index ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
+            
           ></div>
         ))}
       </div>

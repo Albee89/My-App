@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import withLogger from "../SportsClubs/withLogger";
 
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("Welcome");
@@ -34,4 +35,4 @@ const Navigation = () => {
   );
       };
 
-      export default Navigation;
+      export default withLogger(Navigation);

@@ -1,5 +1,8 @@
 import { useForm } from 'react-hook-form';
 import CUstyles from './contact.module.css';
+import WrappedComponent from '../../SportsClubs/Counter';
+
+
 
 const ContactUs = () => {
   const {
@@ -96,9 +99,17 @@ const ContactUs = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn' type='submit' onSubmit="Submitted!">
-                  Submit
-                </button>
+           
+           
+                  <button className='submit-btn' onClick={() => alert('Submitted!')}>
+                  <WrappedComponent />
+     
+              </button>
+
+              
+               
+          
+               
               </form>
               
 

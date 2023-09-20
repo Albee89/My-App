@@ -38,6 +38,7 @@ export default function PhotoGallery() {
     setCurrentIndex(index);
   }
   return (
+    <React.Fragment>
     <div className="PhotoGallery">
     <div id="#PhotoGallery"></div>
     <h2>Image Gallery</h2>
@@ -52,7 +53,7 @@ export default function PhotoGallery() {
         {renderSlides}
       </Carousel>
     </div>
-
+</React.Fragment>
   );
   };
 

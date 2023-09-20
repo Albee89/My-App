@@ -14,6 +14,7 @@ const blogText = ``
 
 const Main = () => {
    return (
+    <React.Fragment>
   <div className="MainSection">         
     <Welcome />
     <News/>
@@ -38,6 +39,7 @@ const Main = () => {
   
 
   </div>
+  </React.Fragment>
 );
 };
 

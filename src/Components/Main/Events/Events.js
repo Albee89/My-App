@@ -1,6 +1,7 @@
   import React from 'react';
   import Eventstyles from "./events.module.css";
-  
+
+
 
   let games = [
     { date: "Saturday 1st", time: "7:00pm", game:  "Sunshine Jets vs Leo Suns" },
@@ -38,6 +39,9 @@ function Events() {
           })}
           </div>
         </table>
+
+       
+     
         </div>
       
     );

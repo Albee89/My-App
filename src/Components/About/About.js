@@ -3,6 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 
 
+
 export default function About() {
     
     return (
@@ -45,6 +46,7 @@ export default function About() {
         ritatis et quasi architecto beatae vitae dicta. 
         Nemo e nis iste natus error sit voluptatem accu.</p>
     </Box>
+   
 
         </div>
         </div>
