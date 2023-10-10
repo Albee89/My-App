@@ -1,6 +1,6 @@
 {
   "name": "sj-app",
-  "homepage": "https://Albee89.GitHub.io/github-pages-app/",
+  "homepage": "https://albee89.github.io/my-app/",
   "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -64,7 +64,8 @@
     "webpack": "^5.88.2"
   },
   "scripts": {
-    "start": "predeploy": "npm run build",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
