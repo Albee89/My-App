@@ -17,6 +17,7 @@
     "express-ctx": "^0.1.1",
     "forecast": "^0.3.2",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.0.0",
     "instagram": "^0.0.4",
     "moment": "^2.29.4",
     "navbar": "^2.1.0",
