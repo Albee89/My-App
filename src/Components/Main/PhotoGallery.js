@@ -1,60 +1,58 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import kurtSoccer from './images/kurtSoccer.jpg';
+import news2 from './images/news2.png';
+import womensSoccer from './images/womensSoccer.jpg';
 
 const imageData = [
   {
-    label: "Largest crowd drawn in 2023",
-    alt: "soccer live game",
-    url: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-  },
-  {
-    label: "Juniors Season Begins",
+    
     alt: "soccer player",
-    url: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+    image: kurtSoccer,
   },
+ 
   {
-    label: "The Sunshne Jets Winning for the seocond time Sunday",
-    alt: "soccer game",
-    url: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-  },
-  {
-    label: "Marshall Brady takes the Jets home",
+    
     alt: "Winning Soccer Score",
-    url: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-  } 
+    image: news2,
+  },
+  {
+    
+    alt: "Womens Wins",
+    image: womensSoccer,
+  },
 ];
 
-const renderSlides = imageData.map((image) => (
-  <div key={image.alt}>
-    <img src={image.url} alt={image.alt} />
-    <p className="legend">{image.label}</p>
-  </div>
-));
-
 export default function PhotoGallery() {
-  const [currentIndex, setCurrentIndex] = useState();
-  function handleChange(index) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleChange = (index) => {
     setCurrentIndex(index);
-  }
-  return (
-    <React.Fragment>
-    <div className="PhotoGallery">
-    <div id="#PhotoGallery"></div>
-    <h2>Image Gallery</h2>
-      <Carousel
-        showArrows={true}
-        autoPlay={true}
-        infiniteLoop={true}
-        selectedItem={imageData[currentIndex]}
-        onChange={handleChange}
-        className="carousel-container"
-      >
-        {renderSlides}
-      </Carousel>
-    </div>
-</React.Fragment>
-  );
   };
 
- 
+  const renderSlides = imageData.map((image, index) => (
+    <div key={index}>
+      <img src={image.image} alt={image.alt} />
+    </div>
+  ));
+
+  return (
+    <React.Fragment>
+      <div className=" Latest News">
+        <div id="#PhotoGallery"></div>
+        <h2>Image Gallery</h2>
+        <Carousel
+          showArrows={true}
+          autoPlay={true}
+          infiniteLoop={true}
+          selectedItem={currentIndex}
+          onChange={handleChange}
+          className="carousel-container"
+        >
+          {renderSlides}
+        </Carousel>
+      </div>
+    </React.Fragment>
+  );
+}
