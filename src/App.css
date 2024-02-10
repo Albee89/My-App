@@ -193,9 +193,9 @@ h2 {
 
   .News {
 
-    width: 400px;
-    height: 400px;
-    float: right;
+    width: 300px;
+    height: 300px;
+    float: center;
 
 
 
@@ -215,8 +215,8 @@ h2 {
       top: 0;
       bottom: 0;
       margin: auto 10px;
-      height: 25px;
-      width: 25px;
+      height: 50px;
+      width: px;
     }
 
     .left {
@@ -296,8 +296,5 @@ h2 {
     float: right;
   }
 
-  .WeatherInformation {
-    display: flex;
-    flex-wrap: wrap; 
-  }
+  
   
