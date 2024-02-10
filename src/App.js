@@ -1,13 +1,13 @@
+// Import necessary React components and styles
 import React from 'react';
 import "./App.css";
 import Navigation from './Components/Navigation/Navigation';
+import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import TikTok from './Components/Main/TikTok';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import About from './Components/About/About';
 import SportsClubs from './Components/SportsClubs/SportsClubs';
-import WeatherInformation from './Components/Main/WeatherInfomation/WeatherInformation';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -21,14 +21,13 @@ function App() {
 
       <TikTok />
       <SportsClubs />
-      <WeatherInformation />
 
       <div>
         <About />
       </div>
 
       <div>
-        <div><br></br></div>
+        <div><br /></div>
         <Footer />
       </div>
     </div>
