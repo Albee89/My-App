@@ -39,9 +39,9 @@ export default function PhotoGallery() {
 
   return (
     <React.Fragment>
-      <div className=" Latest News">
+      <div className="Photo Gallery">
         <div id="#PhotoGallery"></div>
-        <h2>Image Gallery</h2>
+        <h2>Latest News</h2>
         <Carousel
           showArrows={true}
           autoPlay={true}
