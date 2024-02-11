@@ -10,28 +10,28 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      <Header />
+    return (
+        <div className="App">
+            <Navigation />
+            <Header />
 
-      <div className="main">
-        <Main />
-      </div>
+            <div className="main">
+                <Main />
+            </div>
 
-      <TikTok />
-      <SportsClubs />
+            <TikTok />
+            <SportsClubs />
 
-      <div>
-        <About />
-      </div>
+            <div>
+                <About />
+            </div>
 
-      <div>
-        <div><br /></div>
-        <Footer />
-      </div>
-    </div>
-  );
+            <div>
+                <div><br /></div>
+                <Footer />
+            </div>
+        </div>
+    );
 }
 
 export default App;
